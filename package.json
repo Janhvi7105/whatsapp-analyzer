@@ -1,0 +1,14 @@
+{
+  "name": "whatsapp-analyzer",
+  "version": "1.0.0",
+  "description": "MERN WhatsApp Chat Analyzer",
+  "main": "index.js",
+  "scripts": {
+    "backend": "cd backend && nodemon server.js",
+    "frontend": "cd frontend && set PORT=3001 && npm start",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
