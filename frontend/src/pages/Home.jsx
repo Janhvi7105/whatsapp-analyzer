@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import API from "../services/api";
 
 function Home() {
   const [file, setFile] = useState(null);
@@ -34,8 +34,8 @@ function Home() {
       const formData = new FormData();
       formData.append("file", file);
 
-      const res = await axios.post(
-        "http://localhost:5001/api/chat/upload",
+      const res = await API.post(
+        "/chat/upload",
         formData
       );
 
