@@ -1,141 +1,166 @@
-💬 WhatsApp Chat Analyzer with AI Insights
+# 💬 WhatsApp Chat Analyzer with AI Insights
 
-<p align="center"> <b>AI-powered WhatsApp chat analytics built with the MERN Stack.</b><br> Upload exported WhatsApp chats and receive interactive analytics, sentiment analysis, emotion detection, and beautiful visualizations. </p>
+Analyze exported WhatsApp chats using **Artificial Intelligence**, **Natural Language Processing**, and **interactive data visualizations**.
 
-<p align="center"> <img src="https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white" /> <img src="https://img.shields.io/badge/Node.js-Express-339933?logo=node.js&logoColor=white" /> <img src="https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb&logoColor=white" /> <img src="https://img.shields.io/badge/HuggingFace-AI-FFD21E" /> 
-<img src="https://img.shields.io/badge/Frontend-Vercel-black?logo=vercel" /> 
-<img src="https://img.shields.io/badge/Backend-Render-46E3B7" />
- </p>
+A full-stack **MERN Stack** application that transforms raw WhatsApp chat exports into meaningful insights such as message statistics, sentiment analysis, emotion detection, emoji trends, participant activity, and interactive dashboards.
 
-🌐 Live Demo
+---
 
-🔗 Live Application
+## 🚀 Live Demo
+
+**🌐 Live Application**
 
 https://whatsapp-analyzer-ten-pink.vercel.app
 
-💻 GitHub Repository
+**💻 GitHub Repository**
 
 https://github.com/Janhvi7105/whatsapp-analyzer
 
-📖 Overview
+---
 
-WhatsApp Chat Analyzer is a full-stack MERN application that transforms exported WhatsApp chat files into meaningful insights using Artificial Intelligence and Natural Language Processing.
+# 📖 Project Overview
 
-The platform automatically analyzes conversations and provides interactive dashboards containing statistics, timelines, emoji analytics, word frequency, participant activity, sentiment analysis, and emotion detection.
+WhatsApp Chat Analyzer is an AI-powered web application that analyzes exported WhatsApp chat files (`.txt`) and generates visual insights about conversations.
 
-This project demonstrates practical implementation of:
+Instead of manually reading thousands of messages, users simply upload a chat export and instantly receive:
 
-Full-Stack MERN Development
-REST APIs
-MongoDB Database
-Artificial Intelligence Integration
-Natural Language Processing
-Data Visualization
-Cloud Deployment
-✨ Features
-📂 Chat Processing
-Upload exported WhatsApp .txt chat files
-Automatic validation and parsing
-Supports multiple export formats
-Intelligent participant identification
-📊 Conversation Analytics
-Total Messages
-Most Active Participant
-Average Messages
-User-wise Message Distribution
-Smart Conversation Summary
-😊 Emoji Analytics
-Emoji Frequency
-Most Used Emojis
-Emoji Distribution
-Emoji Usage Trends
-🔤 Word Analytics
-Word Frequency
-Stop-word Filtering
-Keyword Extraction
-Most Frequently Used Words
-📅 Activity Analysis
-Daily Activity
-Weekly Activity
-Monthly Timeline
-Conversation Trends
-🤖 AI Insights
+- 📊 Chat Statistics
+- 📈 Activity Timeline
+- 😊 Emoji Analysis
+- 🔤 Word Frequency
+- 🤖 Sentiment Analysis
+- 🧠 Emotion Detection
+- 👥 Participant Insights
+- 📉 Interactive Charts
 
-Powered by the Hugging Face Inference API.
+The project demonstrates full-stack development using the **MERN Stack**, combined with **Hugging Face AI** for Natural Language Processing.
 
-Sentiment Analysis
-Positive
-Neutral
-Negative
-Emotion Detection
-Joy
-Sadness
-Anger
-Fear
-Surprise
-📈 Interactive Dashboard
+---
 
-The application provides interactive visualizations using Chart.js and Recharts.
+# ✨ Features
 
-Dashboard includes:
+### 📂 Chat Upload
 
-User Activity Charts
-Timeline Graphs
-Emoji Charts
-Word Frequency Charts
-AI Insights
-🏗 System Architecture
-                    User
-                      │
-                      ▼
-          Upload WhatsApp Chat
-                      │
-                      ▼
-             React Frontend
-                      │
-                Axios Requests
-                      │
-                      ▼
-            Express.js Backend
-                      │
-          Chat Parsing Engine
-                      │
-        Hugging Face AI Service
-                      │
-                      ▼
-             MongoDB Database
-                      │
-                      ▼
-      Interactive Analytics Dashboard
-🔄 Application Workflow
-Upload Chat
-      │
-      ▼
-Validate File
-      │
-      ▼
-Parse Messages
-      │
-      ▼
-Generate Statistics
-      │
-      ▼
-AI Analysis
-      │
-      ▼
-Store Results
-      │
-      ▼
-Display Dashboard
-🛠 Tech Stack
-Category	Technologies
-Frontend	React.js, React Router, Axios
-Backend	Node.js, Express.js
-Database	MongoDB Atlas, Mongoose
-AI	Hugging Face Inference API
-Charts	Chart.js, Recharts
-Deployment	Vercel, Render
-📂 Folder Structure
+- Upload exported WhatsApp `.txt` files
+- Automatic chat parsing
+- Supports multiple WhatsApp export formats
+- Secure file processing
+
+---
+
+### 📊 Chat Statistics
+
+- Total Messages
+- Most Active Participant
+- Average Messages per Person
+- Conversation Summary
+- User-wise Message Distribution
+
+---
+
+### 📈 Activity Analysis
+
+Visualize conversation activity through:
+
+- Daily Activity
+- Monthly Activity
+- Timeline Analysis
+- Participant Activity
+
+---
+
+### 🔤 Word Analysis
+
+- Most Frequently Used Words
+- Stop-word Filtering
+- Keyword Extraction
+- Top Words Ranking
+
+---
+
+### 😊 Emoji Analysis
+
+- Emoji Frequency
+- Emoji Distribution
+- Total Emoji Usage
+- Most Used Emoji
+- Emoji Statistics
+
+---
+
+### 🤖 AI-Powered Insights
+
+Powered by **Hugging Face Inference API**
+
+Features include:
+
+- Positive / Neutral / Negative Sentiment
+- Emotion Detection
+- Confidence Score
+- AI Generated Summary
+
+Supported emotions:
+
+- 😊 Joy
+- 😐 Neutral
+- 😢 Sadness
+- 😠 Anger
+- 😨 Fear
+- 😲 Surprise
+
+---
+
+### 📊 Interactive Dashboard
+
+Built using **Chart.js** and **Recharts**
+
+Includes:
+
+- Message Statistics
+- Bar Charts
+- Timeline Charts
+- Emoji Charts
+- Activity Graphs
+- AI Insights Dashboard
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- React.js
+- React Router
+- Axios
+- Chart.js
+- Recharts
+
+## Backend
+
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+
+## AI / NLP
+
+- Hugging Face Inference API
+
+## Other Tools
+
+- Multer
+- dotenv
+- CORS
+- Git
+- GitHub
+- Vercel
+- Render
+
+---
+
+# 🏗️ Project Architecture
+
+```
 whatsapp-analyzer
 │
 ├── backend
@@ -156,87 +181,156 @@ whatsapp-analyzer
 │   │   ├── services
 │   │   └── App.js
 │
-├── package.json
-├── package-lock.json
-└── README.md
-🚀 Installation
-Clone Repository
+├── screenshots
+│
+├── README.md
+└── package.json
+```
+
+---
+
+# ⚙️ Installation
+
+## Clone the Repository
+
+```bash
 git clone https://github.com/Janhvi7105/whatsapp-analyzer.git
 
 cd whatsapp-analyzer
-Backend Setup
+```
+
+---
+
+## Backend Setup
+
+```bash
 cd backend
 
 npm install
+```
 
-Create a .env file.
+Create a `.env` file:
 
+```env
 PORT=5001
 MONGO_URI=YOUR_MONGODB_URI
-HUGGINGFACE_API_KEY=YOUR_HUGGINGFACE_API_KEY
+HUGGINGFACE_API_KEY=YOUR_API_KEY
+```
 
-Start backend
+Run backend
 
+```bash
 npm run dev
-Frontend Setup
+```
+
+---
+
+## Frontend Setup
+
+```bash
 cd frontend
 
 npm install
 
 npm start
-🌍 Deployment
-Service	Platform
-Frontend	Vercel
-Backend	Render
-Database	MongoDB Atlas
-AI	Hugging Face
-📸 Screenshots
+```
 
-Add screenshots of your application here.
+---
 
-screenshots/
-│
-├── home.png
-├── upload.png
-├── dashboard.png
-├── charts.png
-└── ai-insights.png
-📚 Usage
-Export a WhatsApp chat without media.
-Save it as a .txt file.
-Upload the file.
-Click Analyze Chat.
-View AI insights, charts, statistics, emoji analysis, and timelines.
-🎯 Learning Outcomes
+# 🌐 Deployment
 
-This project demonstrates practical knowledge of:
+| Service | Platform |
+|----------|----------|
+| Frontend | Vercel |
+| Backend | Render |
+| Database | MongoDB Atlas |
+| AI Model | Hugging Face |
 
-MERN Stack Development
-REST API Design
-MongoDB Integration
-Artificial Intelligence Integration
-Natural Language Processing
-Data Visualization
-File Upload Handling
-Cloud Deployment
-Responsive UI Development
-Git & GitHub
-🚀 Future Enhancements
-User Authentication
-Chat History
-PDF Report Generation
-AI Conversation Summary
-Topic Modeling
-Multi-Chat Comparison
-Dark Mode
-Cloud Storage
-Real-Time Chat Analysis
-👩‍💻 Developer
+---
 
-Janhvi
+# 📸 Application Screenshots
 
-B.Tech Student | MERN Stack Developer | AI Enthusiast
+## 🏠 Home Page
 
-GitHub:
+![Home](screenshots/home.png)
 
-https://github.com/Janhvi7105
+---
+
+## 📊 Chat Analytics Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+## 📈 Messages Analytics
+
+![Charts](screenshots/charts.png)
+
+---
+
+## 📅 Activity Analysis
+
+![Activity](screenshots/activity.png)
+
+---
+
+## 😊 Emoji Analysis
+
+![Emoji](screenshots/emoji.png)
+
+---
+
+# 📖 How to Use
+
+1. Export a WhatsApp chat **without media**.
+2. Save the chat as a `.txt` file.
+3. Open the application.
+4. Upload the chat file.
+5. Click **Analyze Chat**.
+6. Explore:
+   - Message Statistics
+   - AI Insights
+   - Emoji Analysis
+   - Charts
+   - Activity Timeline
+
+---
+
+# 📌 Learning Outcomes
+
+This project demonstrates practical experience with:
+
+- MERN Stack Development
+- REST API Design
+- MongoDB Integration
+- AI API Integration
+- Natural Language Processing
+- File Upload Handling
+- Data Visualization
+- Responsive UI Design
+- Full-Stack Deployment
+- Environment Variable Management
+
+---
+
+# 🚀 Future Enhancements
+
+- User Authentication
+- Chat History
+- Multi-Chat Comparison
+- PDF Report Generation
+- Cloud Storage
+- Topic Modeling
+- Real-Time Analysis
+- Advanced NLP Models
+- Dark Mode
+- Export Analytics
+
+---
+
+# 👩‍💻 Author
+
+**Janhvi**
+
+GitHub: https://github.com/Janhvi7105
+
