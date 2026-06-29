@@ -1,118 +1,188 @@
-📊 WhatsApp Chat Analyzer with AI Insights 🤖
+📊 WhatsApp Chat Analyzer with AI Insights
 
-A full-stack web application that analyzes exported WhatsApp chats and generates data-driven insights, visual analytics, and AI-powered sentiment analysis.
+A full-stack MERN Stack web application that analyzes exported WhatsApp chat files and generates meaningful insights using Artificial Intelligence, interactive charts, and natural language processing.
 
-🚀 Features
-📂 Chat Upload & Processing
-Upload WhatsApp .txt chat file
-Backend validates and parses chat data
-Supports fallback parsing for different chat formats
+🚀 Live Demo
+
+🌐 Live Application: https://whatsapp-analyzer-ten-pink.vercel.app
+
+💻 GitHub Repository: https://github.com/Janhvi7105/whatsapp-analyzer
+
+📌 Project Overview
+
+WhatsApp Chat Analyzer is an AI-powered analytics platform that allows users to upload exported WhatsApp chat files (.txt) and instantly receive comprehensive insights about their conversations.
+
+The application performs:
+
+Chat parsing and processing
+User activity analysis
+Message statistics
+Emoji analysis
+Word frequency analysis
+AI-powered sentiment analysis
+Emotion detection
+Interactive visual dashboards
+✨ Features
+📂 Chat Upload
+Upload exported WhatsApp .txt files
+Automatic validation and parsing
+Supports multiple WhatsApp export formats
 📊 Chat Statistics
-Total number of messages
-Most active user detection
-User-wise message distribution
-Smart summary generation
+Total Messages
+Most Active Participant
+User-wise Message Distribution
+Average Messages
+Smart Conversation Summary
 🔤 Word Analysis
-Word frequency calculation
-Stop-word filtering for meaningful insights
-Helps identify commonly used terms
+Most Frequently Used Words
+Stop-word Filtering
+Keyword Extraction
 😊 Emoji Analysis
-Extracts emojis using regex
-Counts frequency of each emoji
-Displays emoji usage trends
+Emoji Frequency
+Emoji Distribution
+Most Used Emojis
 📅 Activity Analysis
-Messages grouped by:
-Day (Monday–Sunday)
-Month (Jan–Dec)
-Helps visualize user activity patterns
-🧠 AI-Powered Insights
-Sentiment analysis (Positive / Neutral / Negative)
-Emotion detection (Joy, Sadness, etc.)
-Uses HuggingFace API for NLP tasks
-📈 Data Visualization
-Interactive charts using:
-Chart.js
-Recharts
+
+Visualize messaging activity by:
+
+Day of Week
+Month
+Timeline
+🤖 AI-Powered Insights
+
+Powered by the Hugging Face Inference API.
+
 Includes:
-User activity graphs
-Timeline charts
-Emoji charts
+
+Sentiment Analysis
+Positive
+Neutral
+Negative
+Emotion Detection
+Joy
+Sadness
+Anger
+Fear
+Surprise
+📈 Interactive Dashboard
+
+Built using Chart.js and Recharts.
+
+Includes:
+
+User Activity Charts
+Timeline Graphs
+Emoji Charts
+Word Analysis Visualizations
 🧠 How It Works
-User uploads WhatsApp chat file
-Backend reads file using fs
-Chat is parsed into structured messages
-System calculates:
-Message count
-User activity
-Word frequency
-Emoji usage
-AI analyzes sample chat text
-Data is stored in MongoDB
-Results are sent to frontend for visualization
-🧠 Tech Stack
+User uploads a WhatsApp chat export (.txt).
+Backend validates and parses the chat.
+Messages are converted into structured data.
+Statistics and analytics are generated.
+AI performs sentiment and emotion analysis.
+Results are stored in MongoDB.
+Interactive charts and dashboards are displayed on the frontend.
+🛠 Tech Stack
 Frontend
 React.js
 React Router
+Axios
 Chart.js
 Recharts
-Axios
 Backend
 Node.js
 Express.js
-MongoDB (Mongoose)
-AI & Processing
-HuggingFace API (Sentiment + Emotion)
-Multer (file upload)
-dotenv (env management)
-📁 Project Structure
-whatsapp-analyzer/
+MongoDB
+Mongoose
+AI & NLP
+Hugging Face Inference API
+Other Libraries
+Multer
+dotenv
+CORS
+📂 Project Structure
+whatsapp-analyzer
 │
-├── backend/
-│   ├── controllers/      # Chat processing logic
-│   ├── services/         # AI APIs
-│   ├── models/           # MongoDB schema
-│   ├── routes/           # API routes
-│   ├── utils/            # Chat parser
+├── backend
+│   ├── config
+│   ├── controllers
+│   ├── models
+│   ├── routes
+│   ├── services
+│   ├── utils
+│   ├── uploads
 │   └── server.js
 │
-├── frontend/
-│   ├── pages/            # Home, Insights, Charts, Emoji
-│   ├── components/
-│   └── App.js
-⚙️ Installation & Setup
-1️⃣ Clone Repo
-git clone https://github.com/your-username/whatsapp-analyzer.git
+├── frontend
+│   ├── public
+│   ├── src
+│   │   ├── pages
+│   │   ├── components
+│   │   ├── services
+│   │   └── App.js
+│
+├── package.json
+└── README.md
+⚙️ Installation
+Clone Repository
+git clone https://github.com/Janhvi7105/whatsapp-analyzer.git
+
 cd whatsapp-analyzer
-2️⃣ Backend Setup
+Install Backend
 cd backend
+
 npm install
 
-Create .env file:
+Create a .env file inside the backend directory.
 
 PORT=5001
-MONGO_URI=your_mongodb_uri
-HUGGINGFACE_API_KEY=your_key
+MONGO_URI=YOUR_MONGODB_URI
+HUGGINGFACE_API_KEY=YOUR_API_KEY
 
-Run backend:
+Start the backend:
 
 npm run dev
-3️⃣ Frontend Setup
+Install Frontend
 cd frontend
+
 npm install
+
 npm start
-🌐 Running URLs
-Frontend: http://localhost:3000
-Backend: http://localhost:5001
-📂 How to Use
-Export WhatsApp chat as .txt
-Upload file in the app
-View:
-📊 Charts
-😊 Emoji Analysis
-🧠 AI Insights
-🔮 Future Improvements
-Real-time chat streaming
-Advanced NLP (topic modeling)
-PDF report download
-Group comparison analysis
-Dark mode UI 🌙
+🌐 Deployment
+Service	Platform
+Frontend	Vercel
+Backend	Render
+Database	MongoDB Atlas
+📸 Screenshots
+
+Add screenshots here after capturing your application.
+
+Example:
+
+screenshots/
+│
+├── home.png
+├── upload.png
+├── dashboard.png
+├── charts.png
+├── insights.png
+📖 Usage
+Export a WhatsApp chat without media.
+Save the chat as a .txt file.
+Upload the file through the application.
+Click Analyze Chat.
+Explore statistics, charts, and AI-generated insights.
+🔮 Future Enhancements
+User Authentication
+Chat History Management
+PDF Report Generation
+Topic Modeling
+Real-Time Chat Analysis
+Dark Mode
+Multi-Chat Comparison
+Cloud File Storage
+👩‍💻 Author
+
+Janhvi
+
+GitHub: https://github.com/Janhvi7105
